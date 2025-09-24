@@ -1,0 +1,244 @@
+{
+  "cv": {
+    "mainInfo": {
+      "firstName": "Serhii",
+      "lastName": "Staryk",
+      "contactNo": "+380678552889",
+      "email": "serhii.staryk@gmail.com",
+      "address": {
+        "country": "Ukraine",
+        "city": "Lviv"
+      }
+    },
+    "technicalSkills": {
+      "title": "technical skills",
+      "tolls": [
+        "React",
+        "Next.js"
+      ],
+      "languages": [
+        "JavaScript / TypeScript",
+        "HTML5",
+        "CSS3 / Sass"
+      ],
+      "libraries": [
+        "Redux",
+        "Styled-component",
+        "Jest",
+        "Ramda"
+      ]
+    },
+    "workExperience": {
+      "title": "work experience",
+      "workPlaces": [
+        {
+          "companyName": "Amous International",
+          "position": "Software engineer",
+          "address": {
+            "country": "Ukraine",
+            "city": "Lviv"
+          },
+          "duration": {
+            "start": "Apr 2023",
+            "finish": "Present"
+          },
+          "responsibilities": [
+            "Offered valuable insights on crafting mobile-friendly pages without relying heavily on designs",
+            "Played a key role in revamping the company's website",
+            "Led the configuration of project setup and establishment of eslint rules",
+            "Addressed bugs within the primary TMS application",
+            "Conducted thorough code reviews",
+            "Enhanced overall code quality"
+          ],
+          "techStack": [
+            "React 18",
+            "JavaScript (ES6)",
+            "Styled-components",
+            "Redux",
+            "Ramda",
+            "Formik",
+            "NextJS"
+          ]
+        },
+        {
+          "companyName": "Epam Systems, inc.",
+          "position": "Software engineer",
+          "address": {
+            "country": "Ukraine",
+            "city": "Lviv"
+          },
+          "duration": {
+            "start": "Jul 2022",
+            "finish": "Mar 2023"
+          },
+          "responsibilities": [
+            "Engaged in maintaining and implementing new features for an established web application",
+            "Conducted code cleanup while eliminating feature flags",
+            "Implemented segment code to analyze user and system actions",
+            "Executed integration and unit testing",
+            "Conducted code reviews to ensure quality standards were met"
+          ],
+          "techStack": [
+            "Angular 12",
+            "JavaScript (ES6)",
+            "TypeScript",
+            "NgRX",
+            "RxJS",
+            "Lodash",
+            "Jasmine",
+            "TestCafe",
+            "Cucumber",
+            "Segment",
+            "Optimizely",
+            "Micro front-end setup for module separation"
+          ]
+        },
+        {
+          "companyName": "Lviv City Council",
+          "position": "Chief Specialist",
+          "address": {
+            "country": "Ukraine",
+            "city": "Lviv"
+          },
+          "duration": {
+            "start": "Jun 2016",
+            "finish": "Jul 2022"
+          },
+          "responsibilities": [
+            "Organized and facilitated meetings to address urban cadaster issues, fostering collaboration and problem-solving among stakeholders",
+            "Generated new datasets for future publication on the urban cadaster portal, contributing to the transparency and accessibility of urban planning information",
+            "Managed and maintained the urban planning cadaster portal for the city of Lviv, ensuring its accuracy and functionality",
+            "Conducted initial data processing of cadaster information, laying the groundwork for further analysis and utilization in urban planning initiatives"
+          ],
+          "techStack": []
+        }
+      ]
+    },
+    "notableProjects": {
+      "title": "notable projects",
+      "projects": [
+        {
+          "title": "billable project - transportation management software",
+          "description": "Collaborated with a 5-member team to develop a comprehensive transportation management system aimed at optimizing planning and coordination processes. This system encompassed features such as route optimization, load operations, vehicle monitoring, document automation, and reporting. Implemented new features using feature flags, enabling seamless modifications to the system's behavior without disrupting live code."
+        },
+        {
+          "title": "the final project in logos it academy - gorysty travelers",
+          "description": "Built with the Angular 9 framework, our single-page application (SPA) web blog focuses on travel experiences. Employing HTML5, Sass, TypeScript, and Bootstrap, we ensure a seamless user experience. Our design is adaptive, providing optimal viewing across various devices. The weather page fetches real-time data from an open API, enhancing user engagement. We've incorporated a robust filtering system, enabling users to sort posts by categories and tags effortlessly. Additionally, our share functionality allows users to seamlessly post content on their preferred social networks. Each post features a dedicated comment section, fostering community interaction and feedback. Behind the scenes, our backend infrastructure is powered by Firebase, ensuring scalability and reliability."
+        }
+      ]
+    },
+    "education": {
+      "title": "education",
+      "list": [
+        {
+          "educationalInstitution": "lviv polytechnic national university",
+          "degree": "Master of Science",
+          "specialty": "Geoinformation systems and technologies",
+          "address": {
+            "country": "Ukraine",
+            "city": "Lviv"
+          },
+          "duration": {
+            "start": "Sep 2010",
+            "finish": "Dec 2011"
+          }
+        },
+        {
+          "educationalInstitution": "lviv polytechnic national university",
+          "degree": "Bachelor of Science",
+          "specialty": "Geodesy, cartography, and land management",
+          "address": {
+            "country": "Ukraine",
+            "city": "Lviv"
+          },
+          "duration": {
+            "start": "Sep 2006",
+            "finish": "Jun 2010"
+          }
+        }
+      ]
+    },
+    "additional": {
+      "title": "additional",
+      "languages": [
+        "Fluent in Ukraine",
+        "English level B1(intermediate strong)"
+      ],
+      "trainings": [
+        "EPAM front-end online program",
+        "Logos IT academy: programming basics, HTML/CSS, JavaScript, JavaScript Advanced",
+        "English course: Green forest",
+        "Online Course in HTML, CSS, JavaScript (Sololearn)",
+        "Geodatabase management systems; Online Course in Angular 9 (Udemy)",
+        "Online Course in React JS 2020(Udemy)"
+      ]
+    },
+    "socials": {
+      "title": "socials",
+      "list": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/serhii-staryk"
+        },
+        {
+          "title": "Github",
+          "url": "https://github.com/serhiistaryk"
+        },
+        {
+          "title": "LinkedIn",
+          "Gitlab": "https://gitlab.com/SerhiiStaryk"
+        }
+      ]
+    }
+  },
+  "techStack": [
+    {
+      "title": "html",
+      "img": "assets/html.svg"
+    },
+    {
+      "title": "css",
+      "img": "assets/css.svg"
+    },
+    {
+      "title": "js",
+      "img": "assets/js.svg"
+    },
+    {
+      "title": "react",
+      "img": "assets/react.svg"
+    },
+    {
+      "title": "redux",
+      "img": "assets/redux.png"
+    },
+    {
+      "title": "bootstrap",
+      "img": "assets/bootstrap.svg"
+    },
+    {
+      "title": "tailwind",
+      "img": "assets/tailwind.svg"
+    },
+    {
+      "title": "sass",
+      "img": "assets/sass.svg"
+    },
+    {
+      "title": "git",
+      "img": "assets/git.svg"
+    },
+    {
+      "title": "greensock",
+      "img": "assets/greensock.svg"
+    },
+    {
+      "title": "vsc",
+      "img": "assets/vscode.svg"
+    },
+    {
+      "title": "github",
+      "img": "assets/github.svg"
+    }
+  ]
+}
