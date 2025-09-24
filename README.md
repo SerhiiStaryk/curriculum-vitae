@@ -15,59 +15,59 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
+````js
 export default defineConfig([
   globalIgnores(['dist']),
   {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+    # Curriculum Vitae — React + TypeScript + Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+    A small personal curriculum-vitae site built with React, TypeScript and Vite.
+    The project uses Material UI (MUI) for UI components and theming and includes a basic ESLint setup with import sorting and TypeScript-friendly rules.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    ## Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+    - Vite + React + TypeScript starter
+    - Material UI (MUI) theme with Roboto as the default font
+    - Import sorting via `eslint-plugin-simple-import-sort`
+    - ESLint rules for common formatting and best practices
+    - `tsc --noEmit --watch` script for continuous type checking
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+    ## Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    - Node.js 18+ (or LTS)
+    - npm
+
+    ## Install
+
+    ```bash
+    npm install
+    ```
+
+    ## Scripts
+
+    - `npm run dev` — start Vite dev server
+    - `npm run build` — build production bundle (runs `tsc -b` then `vite build`)
+    - `npm run preview` — preview the production build locally
+    - `npm run lint` — run ESLint across the project
+    - `npm run lint -- --fix` — run ESLint and auto-fix fixable issues
+    - `npm run typecheck:watch` — run TypeScript in watch mode (no emit)
+
+    ## Theming
+
+    The app uses a shared MUI theme in `src/theme.ts`. Roboto is loaded in `src/main.tsx`. You can update the theme (palette, typography, components) in `src/theme.ts`.
+
+    ## Contributing
+
+    - Keep components using MUI primitives (Box, Typography, Link, Paper, Stack) instead of raw HTML tags to ensure consistent theming.
+    - Run `npm run lint -- --fix` before committing to keep imports and formatting consistent.
+    - Use `npm run typecheck:watch` while developing to catch type errors early.
+
+    ## Troubleshooting
+
+    - If ESLint reports import-sort errors, run `npm run lint -- --fix` to fix them automatically.
+    - If types look off, run `npm run typecheck:watch` to inspect type errors.
+
+    ## License
+
+    This project is your personal repository. Add a license file if you intend to share or publish it.
+````
