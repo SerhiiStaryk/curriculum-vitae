@@ -6,26 +6,15 @@ type SocialsProps = {
 };
 
 export const Socials = ({ title, list }: SocialsProps) => (
-  <Box>
+  <Box mt={2}>
     <Typography variant='h5'>{title.toUpperCase()}</Typography>
-    <Divider />
+    <Divider sx={{ mb: 1 }} />
     {list.map((item, index) => (
-      <Typography
-        mb='3px'
-        key={index}
-      >
-        <Typography
-          component='span'
-          fontWeight={700}
-          display='inline'
-        >
+      <Typography mb='3px' key={index}>
+        <Typography component='span' fontWeight={700} display='inline'>
           {item.title}:
         </Typography>{' '}
-        <Link
-          href={item.url}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
+        <Link href={item.url} target='_blank' rel='noopener noreferrer'>
           {item.url}
         </Link>
       </Typography>

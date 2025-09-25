@@ -6,26 +6,22 @@ type AdditionalProps = {
   trainings: string[];
 };
 
-export const Additional = ({ title, languages, trainings }: AdditionalProps) => (
-  <Box>
+export const Additional = ({
+  title,
+  languages,
+  trainings,
+}: AdditionalProps) => (
+  <Box mt={2}>
     <Typography variant='h5'>{title.toUpperCase()}</Typography>
-    <Divider />
+    <Divider sx={{ mb: 1 }} />
     <Typography>
-      <Typography
-        component='span'
-        fontWeight={700}
-        display='inline'
-      >
+      <Typography component='span' fontWeight={700} display='inline'>
         Languages:
       </Typography>{' '}
       {languages.join('; ')}
     </Typography>
-    <Typography>
-      <Typography
-        component='span'
-        fontWeight={700}
-        display='inline'
-      >
+    <Typography mt={1}>
+      <Typography component='span' fontWeight={700} display='inline'>
         Training:
       </Typography>{' '}
       {trainings.join('; ')}

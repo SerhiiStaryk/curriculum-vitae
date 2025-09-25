@@ -7,12 +7,14 @@ type NotableProject = {
 
 export const NotableProjects = ({ title, projects }: NotableProject) => {
   return (
-    <Box>
+    <Box mt={2}>
       <Typography variant='h5'>{title.toUpperCase()}</Typography>
-      <Divider />
+      <Divider sx={{ mb: 1 }} />
       {projects.map((project, index) => (
-        <Box key={index}>
-          <Typography fontWeight={500}>{project.title.toUpperCase()}</Typography>
+        <Box key={index} mt={2}>
+          <Typography fontWeight={500}>
+            {project.title.toUpperCase()}
+          </Typography>
           <Typography>{project.description}</Typography>
         </Box>
       ))}

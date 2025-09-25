@@ -27,8 +27,11 @@ function App() {
       <Socials
         {...data.socials}
         list={data.socials.list
-          .filter((item): item is { title: string; url: string } => typeof item.url === 'string')
-          .map(item => ({
+          .filter(
+            (item): item is { title: string; url: string } =>
+              typeof item.url === 'string',
+          )
+          .map((item) => ({
             title: item.title,
             url: item.url,
           }))}
