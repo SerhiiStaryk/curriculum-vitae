@@ -32,6 +32,7 @@
       "title": "work experience",
       "workPlaces": [
         {
+          "logo": "../assets/images/amousLogo.png",
           "companyName": "Amous International",
           "position": "Software engineer",
           "address": {
@@ -40,7 +41,7 @@
           },
           "duration": {
             "start": "Apr 2023",
-            "finish": "Present"
+            "finish": "Dec 2024"
           },
           "responsibilities": [
             "Offered valuable insights on crafting mobile-friendly pages without relying heavily on designs",
@@ -61,6 +62,7 @@
           ]
         },
         {
+          "logo": "../assets/images/epamLogo.png",
           "companyName": "Epam Systems, inc.",
           "position": "Software engineer",
           "address": {
@@ -94,6 +96,7 @@
           ]
         },
         {
+          "logo": "../assets/images/lmrLogo.png",
           "companyName": "Lviv City Council",
           "position": "Chief Specialist",
           "address": {
@@ -131,6 +134,7 @@
       "title": "education",
       "list": [
         {
+          "logo": "../assets/images/lnuLogo.png",
           "educationalInstitution": "lviv polytechnic national university",
           "degree": "Master of Science",
           "specialty": "Geoinformation systems and technologies",
@@ -144,6 +148,7 @@
           }
         },
         {
+          "logo": "../assets/images/lnuLogo.png",
           "educationalInstitution": "lviv polytechnic national university",
           "degree": "Bachelor of Science",
           "specialty": "Geodesy, cartography, and land management",
