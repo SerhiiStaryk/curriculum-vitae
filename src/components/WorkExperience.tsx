@@ -15,14 +15,13 @@ type WorkExperienceProps = {
 };
 
 export const WorkExperience = ({ title, workPlaces }: WorkExperienceProps) => (
-  <Box>
-    <Typography variant='h5'>{title.toUpperCase()}</Typography>
-    <Divider />
+  <Box mt={2}>
+    <Box>
+      <Typography variant='h5'>{title.toUpperCase()}</Typography>
+    </Box>
+    <Divider sx={{ mb: 1 }} />
     {workPlaces.map((place, index) => (
-      <CardExperience
-        key={index}
-        {...place}
-      />
+      <CardExperience key={index} {...place} />
     ))}
   </Box>
 );
