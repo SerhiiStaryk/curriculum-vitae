@@ -121,6 +121,10 @@
       "title": "notable projects",
       "projects": [
         {
+          "title": "billable project - transportation management software (Amous)",
+          "description": "Contributed to the development and maintenance of a logistics web application (Transportation Management System), leveraging React, TypeScript, Redux, and Material-UI to build an intuitive and efficient user interface. Focused on optimizing component performance, refactoring code, and applying best practices to ensure scalability and maintainability. Collaborated closely with the backend team to integrate APIs and process large datasets, while also participating in the delivery of new features such as fleet management, load board integrations, and customization of UI components to meet business requirements."
+        },
+        {
           "title": "billable project - transportation management software",
           "description": "Collaborated with a 5-member team to develop a comprehensive transportation management system aimed at optimizing planning and coordination processes. This system encompassed features such as route optimization, load operations, vehicle monitoring, document automation, and reporting. Implemented new features using feature flags, enabling seamless modifications to the system's behavior without disrupting live code."
         },
@@ -170,12 +174,15 @@
         "English level B1(intermediate strong)"
       ],
       "trainings": [
+        "The Ultimate Redux Course 2024(Udemy)",
+        "Best practices & advanced TypeScript tips for React devs(Udemy)",
+        "React Testing Library with Jest / Vitest(Udemy)",
+        "Online Course in React JS 2020(Udemy)",
         "EPAM front-end online program",
-        "Logos IT academy: programming basics, HTML/CSS, JavaScript, JavaScript Advanced",
         "English course: Green forest",
-        "Online Course in HTML, CSS, JavaScript (Sololearn)",
-        "Geodatabase management systems; Online Course in Angular 9 (Udemy)",
-        "Online Course in React JS 2020(Udemy)"
+        "Angular 9. Теория и Практика 2020 (Udemy)",
+        "Logos IT academy: programming basics, HTML/CSS, JavaScript, JavaScript Advanced",
+        "Geodatabase management systems; Online Course in Angular 9 (Udemy)"
       ]
     },
     "socials": {
@@ -195,55 +202,5 @@
         }
       ]
     }
-  },
-  "techStack": [
-    {
-      "title": "html",
-      "img": "assets/html.svg"
-    },
-    {
-      "title": "css",
-      "img": "assets/css.svg"
-    },
-    {
-      "title": "js",
-      "img": "assets/js.svg"
-    },
-    {
-      "title": "react",
-      "img": "assets/react.svg"
-    },
-    {
-      "title": "redux",
-      "img": "assets/redux.png"
-    },
-    {
-      "title": "bootstrap",
-      "img": "assets/bootstrap.svg"
-    },
-    {
-      "title": "tailwind",
-      "img": "assets/tailwind.svg"
-    },
-    {
-      "title": "sass",
-      "img": "assets/sass.svg"
-    },
-    {
-      "title": "git",
-      "img": "assets/git.svg"
-    },
-    {
-      "title": "greensock",
-      "img": "assets/greensock.svg"
-    },
-    {
-      "title": "vsc",
-      "img": "assets/vscode.svg"
-    },
-    {
-      "title": "github",
-      "img": "assets/github.svg"
-    }
-  ]
+  }
 }
