@@ -27,20 +27,6 @@ const CardExperience = ({
   responsibilities,
   techStack,
 }: CardExperienceProps) => {
-  const files = import.meta.glob('../assets/images/*.{png,jpg,jpeg,svg}', {
-    eager: true,
-    as: 'url',
-  }) as Record<string, string>;
-
-  let logoUrl: string | undefined = undefined;
-
-  if (logo) {
-    const fileName = logo.replace('../assets/images/', '').replace('./', '');
-    const matchKey = Object.keys(files).find((k) => k.endsWith(fileName));
-
-    logoUrl = matchKey ? files[matchKey] : undefined;
-  }
-
   return (
     <>
       <Stack
@@ -50,8 +36,8 @@ const CardExperience = ({
         justifyContent='space-between'
       >
         <Stack direction='row' spacing={2} alignItems='center'>
-          {logoUrl ? (
-            <Avatar variant='square' alt={companyName} src={logoUrl} />
+          {logo ? (
+            <Avatar variant='square' alt={companyName} src={logo} />
           ) : null}
 
           <Box>
