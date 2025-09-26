@@ -27,33 +27,6 @@ const CardExperience = ({
   responsibilities,
   techStack,
 }: CardExperienceProps) => {
-  // Build-time resolver: map basenames in src/assets/images to final URLs
-  const imageModules = import.meta.glob(
-    '/src/assets/images/*.{png,jpg,jpeg,svg}',
-    {
-      eager: true,
-      as: 'url',
-    },
-  ) as Record<string, string>;
-
-  const imageMap: Record<string, string> = Object.fromEntries(
-    Object.entries(imageModules).map(([k, v]) => [
-      k.split('/').pop() as string,
-      v,
-    ]),
-  );
-
-  const resolveLogo = (logoPath?: string) => {
-    if (!logoPath) {
-      return undefined;
-    }
-    const baseName = logoPath.split('/').pop();
-
-    return baseName ? imageMap[baseName] : undefined;
-  };
-
-  const logoUrl = resolveLogo(logo);
-
   return (
     <>
       <Stack
@@ -63,8 +36,8 @@ const CardExperience = ({
         justifyContent='space-between'
       >
         <Stack direction='row' spacing={2} alignItems='center'>
-          {logoUrl ? (
-            <Avatar variant='square' alt={companyName} src={logoUrl} />
+          {logo ? (
+            <Avatar variant='square' alt={companyName} src={logo} />
           ) : null}
 
           <Box>

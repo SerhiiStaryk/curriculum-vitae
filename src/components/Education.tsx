@@ -13,36 +13,20 @@ type EducationProps = {
 };
 
 export const Education = ({ title, list }: EducationProps) => {
-  const files = import.meta.glob('../assets/images/*.{png,jpg,jpeg,svg}', {
-    eager: true,
-    as: 'url',
-  }) as Record<string, string>;
-
   return (
     <Box mt={2}>
       <Typography variant='h5'>{title.toUpperCase()}</Typography>
       <Divider sx={{ mb: 1 }} />
       {list.map((item, index) => {
-        let logoUrl: string | undefined = undefined;
-
-        if (item.logo) {
-          const fileName = item.logo
-            .replace('../assets/images/', '')
-            .replace('./', '');
-          const matchKey = Object.keys(files).find((k) => k.endsWith(fileName));
-
-          logoUrl = matchKey ? files[matchKey] : undefined;
-        }
-
         return (
           <Box key={index} mt={2}>
             <Stack direction='row' justifyContent='space-between'>
               <Stack direction='row' spacing={2} alignItems='center'>
-                {logoUrl ? (
+                {item.logo ? (
                   <Avatar
+                    src={item.logo}
                     variant='square'
                     alt={item.educationalInstitution}
-                    src={logoUrl}
                   />
                 ) : null}
 
