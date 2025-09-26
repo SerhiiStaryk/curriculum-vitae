@@ -27,19 +27,32 @@ const CardExperience = ({
   responsibilities,
   techStack,
 }: CardExperienceProps) => {
-  const files = import.meta.glob('../assets/images/*.{png,jpg,jpeg,svg}', {
-    eager: true,
-    as: 'url',
-  }) as Record<string, string>;
+  // Build-time resolver: map basenames in src/assets/images to final URLs
+  const imageModules = import.meta.glob(
+    '/src/assets/images/*.{png,jpg,jpeg,svg}',
+    {
+      eager: true,
+      as: 'url',
+    },
+  ) as Record<string, string>;
 
-  let logoUrl: string | undefined = undefined;
+  const imageMap: Record<string, string> = Object.fromEntries(
+    Object.entries(imageModules).map(([k, v]) => [
+      k.split('/').pop() as string,
+      v,
+    ]),
+  );
 
-  if (logo) {
-    const fileName = logo.replace('../assets/images/', '').replace('./', '');
-    const matchKey = Object.keys(files).find((k) => k.endsWith(fileName));
+  const resolveLogo = (logoPath?: string) => {
+    if (!logoPath) {
+      return undefined;
+    }
+    const baseName = logoPath.split('/').pop();
 
-    logoUrl = matchKey ? files[matchKey] : undefined;
-  }
+    return baseName ? imageMap[baseName] : undefined;
+  };
+
+  const logoUrl = resolveLogo(logo);
 
   return (
     <>
